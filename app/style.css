@@ -13,6 +13,115 @@
     --very-dark-cyan: hsl(192, 100%, 9%);
     --very-pale-blue: hsl(207, 100%, 98%);
   }
+h1,h2,h3,h4,h5,h6{
+    font-family:"Poppins";
+    color: var(--very-dark-blackish-blue);
+}
+h1{
+    font-size: 3.4rem;
+}
+h2{
+    font-size: 4.8rem;
+    margin:0rem;
+}
+h3{
+    font-size: 2rem;
+    margin:0rem;
+}
 
+body{
+    font-family: "Open Sans";
+    margin:0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding:3rem;
+}
+.button-try-it-free{
+    background-color: transparent;
+    border-radius: 20px;
+    border: 0.1rem solid var(--light-pink);
+    padding: 0.5rem 2.1rem;
+    color: var(--light-pink);
+}
+.first-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 0rem;
+}
+section{
+    display:flex;
+    flex-direction: column;
+}
+.first-paragraph{
+    width: 33%;
+}
+.button-get-started{
+    background-color: var(--pink);
+    border: 0.1rem solid var(--pink);
+    border-radius: 40px;
+    color:white;
+    padding: 1rem 5.5rem;
+    font-weight: bold;
+    box-shadow: 0rem 0.2rem 0.5rem 0rem hsla(192, 100%, 9%, 0.315);
+    margin: 1.5rem;
+}
+.screen-mockups{
+    margin: 5rem 0rem;
+}
+.div-statistics{
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 2rem;
+}
+.inner-div{
+    text-align: left;
+}
+.p-statistics{
+    font-weight: 700;
+    opacity: 30%;
+    text-align: center;
+    margin:0rem;
+}
+
+.grow-inner-div{
+    background-color: var(--very-pale-blue);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding:3rem;
+}
+.text-sections{
+    font-weight: 600;
+}
+.illustration{
+    width:38%;
+}
+.texts{
+    width:38%;
+}
+.flowing-inner-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 7rem 3rem;
+}
+.footer{
+    background-color: var(--very-dark-cyan);
+    color:white;
+    padding:5rem;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    
+}
+#white-logo{
+    color:white;
+}
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
