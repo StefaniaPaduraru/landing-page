@@ -22,9 +22,9 @@
       <button class="button-try-it-free">Try It Free</button>
     </header>
     <main>
-      <section class="first-section">
+      <section class="get-started-section">
         <h1>Build The Community Your Fans Will Love</h1>
-        <p class="first-paragraph">
+        <p class="intro-paragraph">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
@@ -32,12 +32,12 @@
         <button class="button-get-started">Get Started For Free</button>
         <img class="screen-mockups" src="/images/screen-mockups.svg" />
         <div class="div-statistics">
-          <div class="inner-div">
+          <div class="messages-and-communities">
             <img src="/images/icon-communities.svg" />
             <h2>1.4k+</h2>
             <p class="p-statistics">Communities Formed</p>
           </div>
-          <div class="inner-div">
+          <div class="messages-and-communities">
             <img src="/images/icon-messages.svg" />
             <h2>2.7m+</h2>
             <p class="p-statistics">Messages Sent</p>
@@ -50,7 +50,7 @@
         <div class="grow-inner-div">
           <div class="texts">
             <h3>Grow Together</h3>
-            <p class="text-sections">
+            <p class="p-text-sections">
               Generate meaningful discussions with your audience and build a
               strong, loyal community. Think of the insightful conversations you
               miss out on with a feedback form.
@@ -72,7 +72,7 @@
           />
           <div class="texts">
             <h3>Flowing Conversations</h3>
-            <p class="text-sections">
+            <p class="p-text-sections">
               You wouldn't paginate a conversation in real life, so why do it
               online? Our threads have just-in-time loading for a more natural
               flow.
@@ -86,7 +86,7 @@
         <div class="grow-inner-div">
           <div class="texts">
             <h3>Your Users</h3>
-            <p class="text-sections">
+            <p class="p-text-sections">
               It takes no time at all to integrate Huddle with your app's
               authentication solution. This means, once signed in to your app,
               your users can start chatting immediately.
@@ -97,7 +97,7 @@
         <img src="/images/bg-section-bottom-desktop-2.svg" />
       </section>
 
-      <section class="first-section">
+      <section class="get-started-section">
         <h3>Ready To Build Your Community?</h3>
         <button class="button-get-started">Get Started For Free</button>
       </section>
@@ -105,34 +105,83 @@
 
     <footer>
       <img src="/images/bg-footer-top-desktop.svg" />
-      <div class="footer">
-        <img src="https://olawalefaruk.github.io/huddle-3/logo2.svg" />
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla
-          quam, hendrerit lacinia vestibulum a, ultrices quis sem.
-        </p>
-        <img src="/images/icon-phone.svg" />
-        <p>Phone: +1-543-123-4567</p>
-        <img src="/images/icon-email.svg" />
-        <p>example@huddle.com</p>
-        <i class="fa fa-facebook-square" aria-hidden="true"></i>
-        <i class="fa fa-instagram" aria-hidden="true"></i>
-        <i class="fa fa-twitter-square" aria-hidden="true"></i>
-        <h3>newsletter</h3>
-        <h6>
-          To recieve tips on how to grow your community, sign up to our weekly
-          newsletter. We’ll never send you spam or pass on your email address
-        </h6>
-        <button>Subscribe</button>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://www.frontendmentor.io/profile/StefaniaPaduraru"
-            >Stefania Paduraru</a
-          >.
-        </p>
+      <div class="div-footer">
+        <div class="footer-left">
+          <img src="https://olawalefaruk.github.io/huddle-3/logo2.svg" />
+          <p class="p-lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+          </p>
+          <div class="footer-left-phone">
+            <img src="/images/icon-phone.svg" alt="Phone icon" />
+            <span>Phone: +1-543-123-4567</span>
+          </div>
+          <div class="footer-left-email">
+            <img src="/images/icon-email.svg" alt="Email icon" />
+            <p>example@huddle.com</p>
+          </div>
+          <i class="fa fa-facebook-square" aria-hidden="true"></i>
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+          <i class="fa fa-twitter-square" aria-hidden="true"></i>
+        </div>
+        <div class="footer-right">
+          <h4>Newsletter</h4>
+          <p class="p-newsletter-text">
+            To recieve tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <div class="subscribe">
+            <input type="email" name="email" id="email" />
+            <button
+              class="email-button"
+              id="submitButton"
+              onclick="validateEmail(email)"
+            >
+              Subscribe
+            </button>
+          </div>
+
+          <div class="form-message"></div>
+          <script>
+            function validateEmail(email) {
+              const re = /\S+@\S+\.\S+/;
+              return re.test(email);
+            }
+            function showError(message) {
+              const formMessage = document.querySelector(".form-message");
+              formMessage.textContent = message;
+              formMessage.style.color = "red";
+              formMessage.style.fontWeight = 500;
+            }
+            function clearError() {
+              const formMessage = document.querySelector(".form-message");
+              formMessage.textContent = "";
+            }
+
+            const emailInput = document.getElementById("email");
+            const submitButton = document.getElementById("submitButton");
+            submitButton.addEventListener("click", function () {
+              const email = emailInput.value;
+
+              if (!validateEmail(email)) {
+                showError("Check your email please!");
+              } else {
+                clearError();
+              }
+            });
+          </script>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/StefaniaPaduraru"
+              >Stefania Paduraru</a
+            >.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
