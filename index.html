@@ -7,7 +7,7 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/images/favicon-32x32.png"
+      href="./images/favicon-32x32.png"
     />
     <link
       rel="stylesheet"
@@ -18,36 +18,40 @@
   </head>
   <body>
     <header>
-      <img src="/images/logo.svg" />
+      <img src="./images/logo.svg" class="logo" />
       <button class="button-try-it-free">Try It Free</button>
     </header>
+
     <main>
-      <section class="get-started-section">
+      <div class="get-started-section">
         <h1>Build The Community Your Fans Will Love</h1>
-        <p class="intro-paragraph">
+        <p class="p-intro-paragraph">
           Huddle re-imagines the way we build communities. You have a voice, but
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
         <button class="button-get-started">Get Started For Free</button>
-        <img class="screen-mockups" src="/images/screen-mockups.svg" />
+        <img class="screen-mockups" src="./images/screen-mockups.svg" />
         <div class="div-statistics">
           <div class="messages-and-communities">
-            <img src="/images/icon-communities.svg" />
+            <img src="./images/icon-communities.svg" />
             <h2>1.4k+</h2>
             <p class="p-statistics">Communities Formed</p>
           </div>
           <div class="messages-and-communities">
-            <img src="/images/icon-messages.svg" />
+            <img src="./images/icon-messages.svg" />
             <h2>2.7m+</h2>
             <p class="p-statistics">Messages Sent</p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section>
-        <img src="/images/bg-section-top-desktop-1.svg" />
-        <div class="grow-inner-div">
+      <div class="div-grow-together">
+        <div class="div-grow-together-content">
+          <img
+            src="./images/illustration-grow-together.svg"
+            class="illustration"
+          />
           <div class="texts">
             <h3>Grow Together</h3>
             <p class="p-text-sections">
@@ -56,18 +60,12 @@
               miss out on with a feedback form.
             </p>
           </div>
-          <img
-            src="/images/illustration-grow-together.svg"
-            class="illustration"
-          />
         </div>
-        <img src="/images/bg-section-bottom-desktop-1.svg" />
-      </section>
-
-      <section>
-        <div class="flowing-inner-div">
+      </div>
+      <div class="div-flowing-conversation">
+        <div class="div-flowing-conversation-content">
           <img
-            src="/images/illustration-flowing-conversation.svg"
+            src="./images/illustration-flowing-conversation.svg"
             class="illustration"
           />
           <div class="texts">
@@ -79,11 +77,14 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
 
-      <section>
-        <img src="/images/bg-section-top-desktop-2.svg" />
-        <div class="grow-inner-div">
+      <div class="div-your-users">
+        <div class="div-your-users-content">
+          <img
+            src="./images/illustration-your-users.svg"
+            class="illustration"
+          />
           <div class="texts">
             <h3>Your Users</h3>
             <p class="p-text-sections">
@@ -92,19 +93,17 @@
               your users can start chatting immediately.
             </p>
           </div>
-          <img src="/images/illustration-your-users.svg" class="illustration" />
         </div>
-        <img src="/images/bg-section-bottom-desktop-2.svg" />
-      </section>
+      </div>
 
-      <section class="get-started-section">
+      <div class="get-started-section-2">
         <h3>Ready To Build Your Community?</h3>
         <button class="button-get-started">Get Started For Free</button>
-      </section>
+      </div>
     </main>
 
     <footer>
-      <img src="/images/bg-footer-top-desktop.svg" />
+      <img src="./images/bg-footer-top-desktop.svg" />
       <div class="div-footer">
         <div class="footer-left">
           <img src="https://olawalefaruk.github.io/huddle-3/logo2.svg" />
@@ -113,17 +112,29 @@
             nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
           </p>
           <div class="footer-left-phone">
-            <img src="/images/icon-phone.svg" alt="Phone icon" />
+            <img src="./images/icon-phone.svg" alt="Phone icon" />
             <span>Phone: +1-543-123-4567</span>
           </div>
           <div class="footer-left-email">
-            <img src="/images/icon-email.svg" alt="Email icon" />
+            <img src="./images/icon-email.svg" alt="Email icon" />
             <p>example@huddle.com</p>
           </div>
           <i class="fa fa-facebook-square" aria-hidden="true"></i>
           <i class="fa fa-instagram" aria-hidden="true"></i>
           <i class="fa fa-twitter-square" aria-hidden="true"></i>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.frontendmentor.io/profile/StefaniaPaduraru"
+              >Stefania Paduraru</a
+            >.
+          </p>
         </div>
+
         <div class="footer-right">
           <h4>Newsletter</h4>
           <p class="p-newsletter-text">
@@ -170,17 +181,6 @@
               }
             });
           </script>
-          <p class="attribution">
-            Challenge by
-            <a
-              href="https://www.frontendmentor.io?ref=challenge"
-              target="_blank"
-              >Frontend Mentor</a
-            >. Coded by
-            <a href="https://www.frontendmentor.io/profile/StefaniaPaduraru"
-              >Stefania Paduraru</a
-            >.
-          </p>
         </div>
       </div>
     </footer>
